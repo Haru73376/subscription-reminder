@@ -1,0 +1,18 @@
+INSERT INTO users (id,
+                   username,
+                   email,
+                   password_hash,
+                   preferred_currency,
+                   reminder_days_before,
+                   role,
+                   created_at,
+                   updated_at)
+VALUES (UUID_TO_BIN('01930000-0000-7000-8000-000000000001'),
+        'admin',
+        '${admin.email}',
+        '${admin.password.hash}',
+        'CAD',
+        3,
+        'ADMIN',
+        '2026-01-01 00:00:00',
+        '2026-01-01 00:00:00');

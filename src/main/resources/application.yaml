@@ -1,4 +1,9 @@
 spring:
+  flyway:
+    placeholders:
+      admin.email: ${ADMIN_EMAIL}
+      admin.password.hash: ${ADMIN_PASSWORD_HASH}
+
   application:
     name: subscription-reminder
   profiles:
